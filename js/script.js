@@ -1,14 +1,13 @@
 function calculate() {
-    try {
         let weightInput = document .getElementById('weight-input').value;
         console.log(weightInput);
+        let heightInput = document .getElementById('height-input').value;
+        console.log(heightInput);
 
-        if (weightInput.value == '') {
+        if (weightInput == '' || height.value=='') {
             alert('Harap isi berat badan Anda')
         } else {
             console.log('Ada Isi')
         }
-    } catch (error) {
-        console.log(error);
-    }
+
 }

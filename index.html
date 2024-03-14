@@ -3,13 +3,17 @@
     <title>Calculator BMI</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <h1> Calculator BMI - Buatan Fawwaz M</h1>
+        <h1> Calculator BMI </h1>
     </header>
     <main>
+    <div class="box"> 
         <div class="main-container">
             <!-- Form Display -->
            <div class="container-item">
@@ -21,14 +25,18 @@
             <section class="container-form">
             <div>
                 <label>Jenis Kelamin</label><br /> 
-                <input type="radio" id="sex-man">
-                <label for="sex-man">Laki Laki</label>
-                <input type="radio" id="sex-women">
-                <label for="sex-women">Perempuan</label>
+                <input type="radio" id="man" value="pria" name="gender">
+                <label for="man">Laki Laki</label>
+                <input type="radio" id="women" value="wanita" name="gender">
+                <label for="women">Perempuan</label>
             </div>
             <div>
                 <label>Berat Badan (kg)</label><br /> 
-                <input type="number" class="form-item" id="weight-input">
+                <input type="text" class="form-item" id="weight-input">
+            </div>
+            <div>
+                <label>Tinggi Badan (cm)</label><br /> 
+                <input type="text" class="form-item" id="height-input">
             </div>
             <div>
                 <button type="button" id="calculate-button" onclick="calculate()">Hitung BMI</button>
@@ -39,7 +47,7 @@
             <!-- Feature Description -->
             <section>
                 <header>
-                    <h1 style="text-align: left;">Keunggulan Fitur</h1>
+                    <h2 style="text-align: left;">Keunggulan Fitur</h2>
                     <ol type="1">
                         <li>Menghitung berat badan</li>
                         <li>Menentukan kategori berat badan ideal atau tidak</li>
@@ -61,7 +69,7 @@
             <h2>Result</h2>
             <section class="container-result">
                 <h4>Berat Badan Lebih</h4>
-                <h1>0</h1>
+                <h1 id="result">0</h1>
                 <h4>Anda Memiliki Berat Badan Berlebih</h4>
                 <button type="button">Download Hasil BMI</button>
             </section>
@@ -78,6 +86,8 @@
             </section>
            </div> 
         </div>
+    </div>
+    <div class="footer">Fawwaz Marzuqi Saputra</div>
     </main>
     <footer></footer>
     <script src="js/script.js"></script>
