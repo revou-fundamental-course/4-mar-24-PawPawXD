@@ -5,7 +5,7 @@ function calculate() {
         console.log(heightInput);
 
         if (weightInput == '' || height.value=='') {
-            alert('Harap isi berat badan Anda')
+            alert('Harap isi berat atau tinggi badan Anda')
         } else {
             console.log('Ada Isi')
         }
